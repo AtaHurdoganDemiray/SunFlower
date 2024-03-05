@@ -3,7 +3,6 @@
 #ifndef __Bifstream_h__
 #define __Bifstream_h__
 
-
 class Bifstream : public VIFStream
 {
 public:
