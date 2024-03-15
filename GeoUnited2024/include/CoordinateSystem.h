@@ -48,7 +48,7 @@ public:
 	bool CompareDirectionVectors (const CoordinateSystem &cs,vreal compTol)const;// return true if directions are similar within tolerance
 
 	// z directions must be parallel - may be reversed (opposite)  and dirX , dirY may not be same but X-Y plane is the same
-	bool CoordinateSystem::IsWorkXYWorkPlanesSame(const CoordinateSystem &otherCs,vreal compTol)const;
+	bool IsWorkXYWorkPlanesSame(const CoordinateSystem &otherCs,vreal compTol)const;
 	VStr ToString()const;
 	static CoordinateSystem FromString(VStr &str);
 	UnitVector ProjectVectorOnXYPlaneAndNormalize(const VPoint& absVec)const;

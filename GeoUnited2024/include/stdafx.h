@@ -25,6 +25,8 @@
 // Vp 
 
 #include "basicdefinitions.h"
+#include "VStr.h"
+#include "VTime.h"
 #include "VpPreCompileDefinitions.h"
 #include "Bifstream.h"
 #include "Bofstream.h"
