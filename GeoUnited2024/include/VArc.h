@@ -92,7 +92,7 @@ public:
 	bool Compare (const VArc &a2,double tol)const;
 	double GetBulge() const;
 	std::vector<VPoint> GetIntForInfiniteLineAndCircleOfArc (const VLine &l)const;
-	std::vector<VPoint> VArc::GetIntForFullArcs (const VArc &a , vreal overlapTol) const;
+	std::vector<VPoint> GetIntForFullArcs (const VArc &a , vreal overlapTol) const;
 	bool IsOnArc(const VPoint &p, vreal tol) const;
 	bool Split (int n, std::vector<VArc> &res)const;
 	vreal GetChordWidthAtH (vreal h)const;// h is assumed to be between 0 and radius (0 means center chord width is diam, r means tip of circle chord width is 0)

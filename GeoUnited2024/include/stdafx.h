@@ -16,7 +16,7 @@
 
 #undef __MWDXFREADER__
 
-//#include "stdafxwin.h"
+#include "stdafxwin.h"
 #include "stdafxstd.h"
 
 #define SAFE_DELETE(ptr) if (ptr) { delete ptr; ptr = NULL; }
@@ -83,8 +83,8 @@ public:
 	static void SetVSolidCncResourceDllHi ( HINSTANCE solidCncResourceDllHi);
 	//static const int v_maxChrN;
 	//static VChr * v_chrArr;
-	static VStr VGlobalFunctions::VLoadString (UINT nID);
-	static CString VGlobalFunctions::VLoadString2 (UINT nID);
+	static VStr VLoadString (UINT nID);
+	static CString VLoadString2 (UINT nID);
 	static bool GetProductAndVersion(CString & strProductName, CString & strProductVersion);
 private:
 	static VStringTableTranslater *m_vstTranslater; 
