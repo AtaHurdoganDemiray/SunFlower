@@ -19,6 +19,33 @@
     <None Include="..\..\include\sVector.inl">
       <Filter>include</Filter>
     </None>
+    <None Include="..\..\src\geometrycore.dsp">
+      <Filter>src</Filter>
+    </None>
+    <None Include="..\..\src\SurfaceQuadTrimmer2.cpp___">
+      <Filter>src</Filter>
+    </None>
+    <None Include="..\..\include\LineCast.inl">
+      <Filter>include</Filter>
+    </None>
+    <None Include="..\..\include\QdrEqSolver.inl">
+      <Filter>include</Filter>
+    </None>
+    <None Include="..\..\include\ToolCircle.inl">
+      <Filter>include</Filter>
+    </None>
+    <None Include="..\..\include\ToolLine.inl">
+      <Filter>include</Filter>
+    </None>
+    <None Include="..\..\include\ToolPrimMaker.inl">
+      <Filter>include</Filter>
+    </None>
+    <None Include="..\..\include\ToolVerticalLine.inl">
+      <Filter>include</Filter>
+    </None>
+    <None Include="..\..\include\vTool.inl">
+      <Filter>include</Filter>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="include">
@@ -1379,6 +1406,60 @@
     <ClInclude Include="..\..\include\VVoxelList.h">
       <Filter>include</Filter>
     </ClInclude>
+    <ClInclude Include="..\..\include\BoxCollisionCheck.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\CollPrimitiveFactory.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\ImprovedTriangleContainerBox.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\LineCast.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\MultiWireCollCheck.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\QdrEqSolver.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\SurfaceCollChecker.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\SweptCircleArcColl.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\SweptCircleLineColl.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\ToolCircle.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\ToolLine.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\ToolPrim.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\ToolPrimMaker.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\ToolVerticalLine.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\TriangleContainerBox.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\TriangleSphereTouch.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\VRefTriMeshCollCheck.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\vTool.h">
+      <Filter>include</Filter>
+    </ClInclude>
     <ClInclude Include="..\..\include\VDir.h">
       <Filter>include</Filter>
     </ClInclude>
@@ -2617,6 +2698,39 @@
       <Filter>src</Filter>
     </ClCompile>
     <ClCompile Include="..\..\src\VVoxelList.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\BoxCollisionCheck.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\CollPrimitiveFactory.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\ImprovedTriangleContainerBox.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\MultiWireCollCheck.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\surfacecollchecker.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\SweptCircleArcColl.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\SweptCircleLineColl.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\TriangleContainerBox.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\TriangleSphereTouch.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\VRefTriMeshCollCheck.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\ZMap.cpp">
       <Filter>src</Filter>
     </ClCompile>
     <ClCompile Include="..\..\src\VDir.cpp">
