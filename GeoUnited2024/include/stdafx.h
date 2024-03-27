@@ -35,7 +35,7 @@
 //V_NO_MFC
 #define V_NO_MFC
 #ifdef V_NO_MFC
-	#include "VMenu.h"
+	//#include "VMenu.h"
 #endif
 
 

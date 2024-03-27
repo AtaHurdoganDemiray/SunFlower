@@ -44,8 +44,10 @@ public:
 	void SetPEntity (Entity *ent);
 	Entity * GetPEntity ();
 	const VStr GetModelTypeEng () const;
+#ifndef V_NO_MFC
 	VMenu * GetContextMenu ();
 	void SetContextMenu (VMenu *contextmenu);
+#endif
 	VStr & GetName();
 
 protected:

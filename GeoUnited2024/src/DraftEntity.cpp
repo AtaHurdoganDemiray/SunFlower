@@ -4,6 +4,9 @@
 #include "DraftEntity.h"
 #include "Model.h" 
 
+#ifndef V_NO_MFC
+#include "VMenu.h"
+#endif
 
 DraftEntity::DraftEntity (Model *model)
 //:ViewPointItem (type,name)
@@ -125,7 +128,7 @@ const VStr DraftEntity::GetModelTypeEng () const
 {
 	return m_model->GetModelTypeEng();
 }
-	
+#ifndef V_NO_MFC
 VMenu * DraftEntity::GetContextMenu ()
 {
 	return m_model->GetContextMenu();
@@ -135,7 +138,7 @@ void DraftEntity::SetContextMenu (VMenu *contextmenu)
 {
 	m_model->SetContextMenu (contextmenu);
 }
-	
+#endif	
 VStr & DraftEntity::GetName()
 {
 	return m_model->GetName();
