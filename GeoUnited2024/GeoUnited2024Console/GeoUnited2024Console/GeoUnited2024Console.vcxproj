@@ -108,7 +108,7 @@
     <ClCompile>
       <WarningLevel>Level3</WarningLevel>
       <SDLCheck>true</SDLCheck>
-      <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>x64;_DEBUG;_LIB;_WINDOWS;_SECURE_SCL=0;VP_COMPILING_ALL;_VC80_UPGRADE=0x0710;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <AdditionalIncludeDirectories>..\..\include\UI\_English;..\..\include\NonMFCDefinitions;..\..\include\gl;..\..\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
@@ -136,15 +136,20 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <None Include="..\..\include\AABB.inl" />
+    <None Include="..\..\include\LineCast.inl" />
     <None Include="..\..\include\LineSetToSequentialLineSet.inl" />
     <None Include="..\..\include\MgcDelaunay2D.inl" />
     <None Include="..\..\include\MultiGV.inl" />
     <None Include="..\..\include\PrimitiveGeoVec.inl" />
+    <None Include="..\..\include\QdrEqSolver.inl" />
     <None Include="..\..\include\sVector.inl" />
+    <None Include="..\..\include\ToolCircle.inl" />
+    <None Include="..\..\include\ToolLine.inl" />
+    <None Include="..\..\include\ToolPrimMaker.inl" />
+    <None Include="..\..\include\ToolVerticalLine.inl" />
+    <None Include="..\..\include\vTool.inl" />
     <None Include="..\..\src\geometrycore.dsp" />
     <None Include="..\..\src\SurfaceQuadTrimmer2.cpp___" />
-    <None Include="..\src\geometrycore.dsp" />
-    <None Include="..\src\SurfaceQuadTrimmer2.cpp___" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\include\AABB.h" />
@@ -167,6 +172,7 @@
     <ClInclude Include="..\..\include\BoundedSurface.h" />
     <ClInclude Include="..\..\include\BoundingBox.h" />
     <ClInclude Include="..\..\include\BoundingBox2TriMesh.h" />
+    <ClInclude Include="..\..\include\BoxCollisionCheck.h" />
     <ClInclude Include="..\..\include\BspLine2d.h" />
     <ClInclude Include="..\..\include\BSplineControlPoints.h" />
     <ClInclude Include="..\..\include\BSplineCurve.h" />
@@ -195,6 +201,7 @@
     <ClInclude Include="..\..\include\Camera.h" />
     <ClInclude Include="..\..\include\CastIf.h" />
     <ClInclude Include="..\..\include\CmnBase.h" />
+    <ClInclude Include="..\..\include\CollPrimitiveFactory.h" />
     <ClInclude Include="..\..\include\ColorDefinition.h" />
     <ClInclude Include="..\..\include\CompositeCurve.h" />
     <ClInclude Include="..\..\include\CompositeCurvePointGenerator.h" />
@@ -293,6 +300,7 @@
     <ClInclude Include="..\..\include\igesTransformationMatrix.h" />
     <ClInclude Include="..\..\include\IgesTrimLoop.h" />
     <ClInclude Include="..\..\include\IgesTrimLoop2d.h" />
+    <ClInclude Include="..\..\include\ImprovedTriangleContainerBox.h" />
     <ClInclude Include="..\..\include\IncDel.h" />
     <ClInclude Include="..\..\include\IndexedFaceSetPointGenerator.h" />
     <ClInclude Include="..\..\include\InfiniteCylinderLineIntersection.h" />
@@ -305,6 +313,7 @@
     <ClInclude Include="..\..\include\Lighting.h" />
     <ClInclude Include="..\..\include\Line.h" />
     <ClInclude Include="..\..\include\LinearEquations.h" />
+    <ClInclude Include="..\..\include\LineCast.h" />
     <ClInclude Include="..\..\include\LineGroupsToPolygons.h" />
     <ClInclude Include="..\..\include\LineIntersection.h" />
     <ClInclude Include="..\..\include\LineIntersection2d.h" />
@@ -359,6 +368,7 @@
     <ClInclude Include="..\..\include\MultiTextToPointsObject.h" />
     <ClInclude Include="..\..\include\MultiTriangles.h" />
     <ClInclude Include="..\..\include\MultiTrianglesSectionMaker.h" />
+    <ClInclude Include="..\..\include\MultiWireCollCheck.h" />
     <ClInclude Include="..\..\include\NameList.h" />
     <ClInclude Include="..\..\include\NewtonRaphson.h" />
     <ClInclude Include="..\..\include\NFPForOpenContours.h" />
@@ -430,6 +440,7 @@
     <ClInclude Include="..\..\include\ProjectionMatrix.h" />
     <ClInclude Include="..\..\include\PrsNurbsCurveConvert.h" />
     <ClInclude Include="..\..\include\PViewEl.h" />
+    <ClInclude Include="..\..\include\QdrEqSolver.h" />
     <ClInclude Include="..\..\include\QuadPointGenerator.h" />
     <ClInclude Include="..\..\include\QuadraticEquation.h" />
     <ClInclude Include="..\..\include\Quat.h" />
@@ -484,6 +495,7 @@
     <ClInclude Include="..\..\include\SubFigureDefinition.h" />
     <ClInclude Include="..\..\include\Surface.h" />
     <ClInclude Include="..\..\include\SurfaceBspTrimmer.h" />
+    <ClInclude Include="..\..\include\SurfaceCollChecker.h" />
     <ClInclude Include="..\..\include\SurfaceOfRevolution.h" />
     <ClInclude Include="..\..\include\SurfaceOfRevolutionPointGenerator.h" />
     <ClInclude Include="..\..\include\SurfacePointGenerator.h" />
@@ -500,6 +512,8 @@
     <ClInclude Include="..\..\include\SurfPointsPack2TriangleMesh.h" />
     <ClInclude Include="..\..\include\SurfPointsPackBucketed.h" />
     <ClInclude Include="..\..\include\sVector.h" />
+    <ClInclude Include="..\..\include\SweptCircleArcColl.h" />
+    <ClInclude Include="..\..\include\SweptCircleLineColl.h" />
     <ClInclude Include="..\..\include\TabulatedCylinder.h" />
     <ClInclude Include="..\..\include\TabulatedCylinderPointGenerator.h" />
     <ClInclude Include="..\..\include\TArray.h" />
@@ -508,6 +522,11 @@
     <ClInclude Include="..\..\include\TextBox.h" />
     <ClInclude Include="..\..\include\ThinTransformShell.h" />
     <ClInclude Include="..\..\include\ThreeDLoopToSurfParSpace.h" />
+    <ClInclude Include="..\..\include\ToolCircle.h" />
+    <ClInclude Include="..\..\include\ToolLine.h" />
+    <ClInclude Include="..\..\include\ToolPrim.h" />
+    <ClInclude Include="..\..\include\ToolPrimMaker.h" />
+    <ClInclude Include="..\..\include\ToolVerticalLine.h" />
     <ClInclude Include="..\..\include\ToroidalSurface.h" />
     <ClInclude Include="..\..\include\ToroidalSurfacePointGenerator.h" />
     <ClInclude Include="..\..\include\TPointerArray.h" />
@@ -516,6 +535,7 @@
     <ClInclude Include="..\..\include\TransformationMatrixSet.h" />
     <ClInclude Include="..\..\include\TransformData.h" />
     <ClInclude Include="..\..\include\Tri2TriCollCheck2d.h" />
+    <ClInclude Include="..\..\include\TriangleContainerBox.h" />
     <ClInclude Include="..\..\include\TriangleIntersection.h" />
     <ClInclude Include="..\..\include\TriangleMesh.h" />
     <ClInclude Include="..\..\include\TriangleMesh2d.h" />
@@ -526,6 +546,7 @@
     <ClInclude Include="..\..\include\TriangleMeshSplitter.h" />
     <ClInclude Include="..\..\include\TrianglePointMinDist.h" />
     <ClInclude Include="..\..\include\Triangles.h" />
+    <ClInclude Include="..\..\include\TriangleSphereTouch.h" />
     <ClInclude Include="..\..\include\TriangleSplitter.h" />
     <ClInclude Include="..\..\include\TrianglesToPoints.h" />
     <ClInclude Include="..\..\include\TrimLine.h" />
@@ -584,12 +605,14 @@
     <ClInclude Include="..\..\include\VRefTriangleMesh.h" />
     <ClInclude Include="..\..\include\VRefTriangleMeshWriter.h" />
     <ClInclude Include="..\..\include\VRefTriMesh.h" />
+    <ClInclude Include="..\..\include\VRefTriMeshCollCheck.h" />
     <ClInclude Include="..\..\include\VStr.h" />
     <ClInclude Include="..\..\include\VStringTableTranslater.h" />
     <ClInclude Include="..\..\include\VTest.h" />
     <ClInclude Include="..\..\include\VTextLog.h" />
     <ClInclude Include="..\..\include\VTime.h" />
     <ClInclude Include="..\..\include\VTolerance.h" />
+    <ClInclude Include="..\..\include\vTool.h" />
     <ClInclude Include="..\..\include\VTPointer.h" />
     <ClInclude Include="..\..\include\VTransformable.h" />
     <ClInclude Include="..\..\include\VTriangle.h" />
@@ -622,6 +645,7 @@
     <ClCompile Include="..\..\src\BoundedSurface.cpp" />
     <ClCompile Include="..\..\src\BoundingBox.cpp" />
     <ClCompile Include="..\..\src\BoundingBox2TriMesh.cpp" />
+    <ClCompile Include="..\..\src\BoxCollisionCheck.cpp" />
     <ClCompile Include="..\..\src\BSplineControlPoints.cpp" />
     <ClCompile Include="..\..\src\BSplineCurve.cpp" />
     <ClCompile Include="..\..\src\BSplineCurvePointGenerator.cpp" />
@@ -644,6 +668,7 @@
     <ClCompile Include="..\..\src\Camera.cpp" />
     <ClCompile Include="..\..\src\CastIf.cpp" />
     <ClCompile Include="..\..\src\CmnBase.cpp" />
+    <ClCompile Include="..\..\src\CollPrimitiveFactory.cpp" />
     <ClCompile Include="..\..\src\ColorDefinition.cpp" />
     <ClCompile Include="..\..\src\CompositeCurve.cpp" />
     <ClCompile Include="..\..\src\CompositeCurvePointGenerator.cpp" />
@@ -731,6 +756,7 @@
     <ClCompile Include="..\..\src\IgesFileWrite.cpp" />
     <ClCompile Include="..\..\src\igesTransformationMatrix.cpp" />
     <ClCompile Include="..\..\src\IgesTrimLoop2d.cpp" />
+    <ClCompile Include="..\..\src\ImprovedTriangleContainerBox.cpp" />
     <ClCompile Include="..\..\src\incdel.cpp" />
     <ClCompile Include="..\..\src\IndexedFaceSetPointGenerator.cpp" />
     <ClCompile Include="..\..\src\InfiniteCylinderLineIntersection.cpp" />
@@ -789,6 +815,7 @@
     <ClCompile Include="..\..\src\MultiTextToPointsObject.cpp" />
     <ClCompile Include="..\..\src\MultiTriangles.cpp" />
     <ClCompile Include="..\..\src\MultiTrianglesSectionMaker.cpp" />
+    <ClCompile Include="..\..\src\MultiWireCollCheck.cpp" />
     <ClCompile Include="..\..\src\NameList.cpp" />
     <ClCompile Include="..\..\src\NewtonRaphson.cpp" />
     <ClCompile Include="..\..\src\NFPForOpenContours.cpp" />
@@ -908,6 +935,7 @@
     <ClCompile Include="..\..\src\Stipple.cpp" />
     <ClCompile Include="..\..\src\SubFigureDefinition.cpp" />
     <ClCompile Include="..\..\src\SurfaceBspTrimmer.cpp" />
+    <ClCompile Include="..\..\src\surfacecollchecker.cpp" />
     <ClCompile Include="..\..\src\SurfaceOfRevolution.cpp" />
     <ClCompile Include="..\..\src\SurfaceOfRevolutionPointGenerator.cpp" />
     <ClCompile Include="..\..\src\SurfacePointGenerator.cpp" />
@@ -924,6 +952,8 @@
     <ClCompile Include="..\..\src\SurfPointsPack2TriangleMesh.cpp" />
     <ClCompile Include="..\..\src\SurfPointsPackBucketed.cpp" />
     <ClCompile Include="..\..\src\sVector.cpp" />
+    <ClCompile Include="..\..\src\SweptCircleArcColl.cpp" />
+    <ClCompile Include="..\..\src\SweptCircleLineColl.cpp" />
     <ClCompile Include="..\..\src\TabulatedCylinder.cpp" />
     <ClCompile Include="..\..\src\TabulatedCylinderPointGenerator.cpp" />
     <ClCompile Include="..\..\src\TestGeometryContainers.cpp" />
@@ -938,6 +968,7 @@
     <ClCompile Include="..\..\src\TransformationMatrixSet.cpp" />
     <ClCompile Include="..\..\src\TransformData.cpp" />
     <ClCompile Include="..\..\src\Tri2TriCollCheck2d.cpp" />
+    <ClCompile Include="..\..\src\TriangleContainerBox.cpp" />
     <ClCompile Include="..\..\src\TriangleIntersection.cpp" />
     <ClCompile Include="..\..\src\TriangleMesh.cpp" />
     <ClCompile Include="..\..\src\TriangleMesh2d.cpp" />
@@ -948,6 +979,7 @@
     <ClCompile Include="..\..\src\TriangleMeshSplitter.cpp" />
     <ClCompile Include="..\..\src\TrianglePointMinDist.cpp" />
     <ClCompile Include="..\..\src\Triangles.cpp" />
+    <ClCompile Include="..\..\src\TriangleSphereTouch.cpp" />
     <ClCompile Include="..\..\src\TriangleSplitter.cpp" />
     <ClCompile Include="..\..\src\TrianglesToPoints.cpp" />
     <ClCompile Include="..\..\src\TrimLoopVerifier.cpp" />
@@ -1000,6 +1032,7 @@
     <ClCompile Include="..\..\src\VRand.cpp" />
     <ClCompile Include="..\..\src\VRefTriangleMesh.cpp" />
     <ClCompile Include="..\..\src\VRefTriangleMeshWriter.cpp" />
+    <ClCompile Include="..\..\src\VRefTriMeshCollCheck.cpp" />
     <ClCompile Include="..\..\src\VStr.cpp" />
     <ClCompile Include="..\..\src\VStringTableTranslater.cpp" />
     <ClCompile Include="..\..\src\VTest.cpp" />
@@ -1015,6 +1048,7 @@
     <ClCompile Include="..\..\src\VUnit.cpp" />
     <ClCompile Include="..\..\src\VVoxel.cpp" />
     <ClCompile Include="..\..\src\VVoxelList.cpp" />
+    <ClCompile Include="..\..\src\ZMap.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
