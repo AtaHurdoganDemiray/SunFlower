@@ -141,15 +141,9 @@
     <None Include="..\..\include\MultiGV.inl" />
     <None Include="..\..\include\PrimitiveGeoVec.inl" />
     <None Include="..\..\include\sVector.inl" />
-    <None Include="..\..\src\geometrycore.dsp" />
-    <None Include="..\..\src\SurfaceQuadTrimmer2.cpp___" />
-    <None Include="..\src\geometrycore.dsp" />
-    <None Include="..\src\SurfaceQuadTrimmer2.cpp___" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\include\AABB.h" />
-    <ClInclude Include="..\..\include\AddTrimLoop2SurfPointsPack_.h" />
-    <ClInclude Include="..\..\include\AllTrimLoopUtilities_.h" />
     <ClInclude Include="..\..\include\AnalyzeSurface.h" />
     <ClInclude Include="..\..\include\AngleSupport.h" />
     <ClInclude Include="..\..\include\Arc.h" />
@@ -384,7 +378,6 @@
     <ClInclude Include="..\..\include\oglTrimmedNurbs.h" />
     <ClInclude Include="..\..\include\OglWindowData.h" />
     <ClInclude Include="..\..\include\OGL_Frame.h" />
-    <ClInclude Include="..\..\include\OLCNetUserForASCIITextComServer.h" />
     <ClInclude Include="..\..\include\OperationTransform.h" />
     <ClInclude Include="..\..\include\OperationTransformList.h" />
     <ClInclude Include="..\..\include\OrderSequentialLineSets.h" />
@@ -549,7 +542,9 @@
     <ClInclude Include="..\..\include\VChronometer.h" />
     <ClInclude Include="..\..\include\VColor.h" />
     <ClInclude Include="..\..\include\VCombinations.h" />
+    <ClInclude Include="..\..\include\VD.h" />
     <ClInclude Include="..\..\include\VDelaunay2d.h" />
+    <ClInclude Include="..\..\include\VDir.h" />
     <ClInclude Include="..\..\include\VectorSerializer.h" />
     <ClInclude Include="..\..\include\VEllipse.h" />
     <ClInclude Include="..\..\include\Vertex.h" />
@@ -592,10 +587,12 @@
     <ClInclude Include="..\..\include\VTolerance.h" />
     <ClInclude Include="..\..\include\VTPointer.h" />
     <ClInclude Include="..\..\include\VTransformable.h" />
+    <ClInclude Include="..\..\include\VTranslatedData.h" />
     <ClInclude Include="..\..\include\VTriangle.h" />
     <ClInclude Include="..\..\include\VTriangle2d.h" />
     <ClInclude Include="..\..\include\VTriangle2dE.h" />
     <ClInclude Include="..\..\include\VTriangleE.h" />
+    <ClInclude Include="..\..\include\VTrnFile.h" />
     <ClInclude Include="..\..\include\VTTextMap.h" />
     <ClInclude Include="..\..\include\VUnit.h" />
     <ClInclude Include="..\..\include\VVoxel.h" />
@@ -608,8 +605,6 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\..\src\AABB.cpp" />
-    <ClCompile Include="..\..\src\AddTrimLoop2SurfPointsPack_.cpp" />
-    <ClCompile Include="..\..\src\AllTrimLoopUtilities_.cpp" />
     <ClCompile Include="..\..\src\analyzesurface.cpp" />
     <ClCompile Include="..\..\src\Arc.cpp" />
     <ClCompile Include="..\..\src\arcfit.cpp" />
@@ -813,7 +808,6 @@
     <ClCompile Include="..\..\src\oglTrimmedNurbs.cpp" />
     <ClCompile Include="..\..\src\OglWindowData.cpp" />
     <ClCompile Include="..\..\src\OGL_Frame.cpp" />
-    <ClCompile Include="..\..\src\OLCNetUserForASCIITextComServer.cpp" />
     <ClCompile Include="..\..\src\OperationTransform.cpp" />
     <ClCompile Include="..\..\src\OperationTransformList.cpp" />
     <ClCompile Include="..\..\src\Output.cpp" />
@@ -968,7 +962,9 @@
     <ClCompile Include="..\..\src\VChronometer.cpp" />
     <ClCompile Include="..\..\src\VColor.cpp" />
     <ClCompile Include="..\..\src\VCombinations.cpp" />
+    <ClCompile Include="..\..\src\VD.cpp" />
     <ClCompile Include="..\..\src\VDelaunay2d.cpp" />
+    <ClCompile Include="..\..\src\VDir.cpp" />
     <ClCompile Include="..\..\src\VectorSerializer.cpp" />
     <ClCompile Include="..\..\src\VEllipse.cpp" />
     <ClCompile Include="..\..\src\Vertex.cpp" />
@@ -1007,10 +1003,12 @@
     <ClCompile Include="..\..\src\VTime.cpp" />
     <ClCompile Include="..\..\src\VTPointer.cpp" />
     <ClCompile Include="..\..\src\VTransformable.cpp" />
+    <ClCompile Include="..\..\src\VTranslatedData.cpp" />
     <ClCompile Include="..\..\src\VTriangle.cpp" />
     <ClCompile Include="..\..\src\VTriangle2d.cpp" />
     <ClCompile Include="..\..\src\VTriangle2dE.cpp" />
     <ClCompile Include="..\..\src\vtrianglee.cpp" />
+    <ClCompile Include="..\..\src\VTrnFile.cpp" />
     <ClCompile Include="..\..\src\VTTextMap.cpp" />
     <ClCompile Include="..\..\src\VUnit.cpp" />
     <ClCompile Include="..\..\src\VVoxel.cpp" />

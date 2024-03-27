@@ -45,7 +45,7 @@ void VMakeHull::LineSetToRelativeCS()
 	VPoint minP = m_lineSet.GetMin();
 	CoordinateSystem relCS(minP);
 	m_relCS = relCS;
-	for (int i; i < m_lineSet.Size(); i++)
+	for (int i = 0; i < m_lineSet.Size(); i++)
 	{
 		VPoint p1 = m_lineSet.At(i).GetP1();
 		VPoint p2 = m_lineSet.At(i).GetP2();

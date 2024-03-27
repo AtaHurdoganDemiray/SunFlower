@@ -2,6 +2,7 @@
 
 #ifndef __CompositeCurvePointGenerator_h__
 #define __CompositeCurvePointGenerator_h__
+
 #include "CurvePointGenerator.h"
 
 class IgesEntity;

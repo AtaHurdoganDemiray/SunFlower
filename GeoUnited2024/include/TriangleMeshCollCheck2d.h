@@ -14,7 +14,7 @@
 #define __TriangleMeshCollCheck2d_h__
 
 //#include "DynamicPosCubes2d.h"
-#include"LongList.h"
+#include "LongList.h"
 #include "TriangleMesh2d.h"
 #include "PosCubes2d.h"
 #include "DynamicPosCubes2d.h"

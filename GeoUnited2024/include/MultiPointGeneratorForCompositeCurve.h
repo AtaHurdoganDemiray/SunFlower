@@ -1,7 +1,7 @@
 // MultiPointGeneratorForCompositeCurve.h
 #ifndef __MultiPointGeneratorForCompositeCurve_h__
 #define __MultiPointGeneratorForCompositeCurve_h__
-#include "_CurvePointGenerator.h"
+#include "CurvePointGenerator.h"
 
 class IgesEntity;
 class IgesEntitySet;

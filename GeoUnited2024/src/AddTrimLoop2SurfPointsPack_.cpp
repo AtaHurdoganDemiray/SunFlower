@@ -11,9 +11,9 @@
 ******************************************************************************/
 
 #include "stdafx.h"
-#include "AddTrimLoop2SurfPointsPack.h"
+#include "AddTrimLoop2SurfPointsPack_.h"
 #include "SurfPointsPack.h"
-#include "gmTrimLoop.h"
+//#include "gmTrimLoop.h"
 #include "SetMerger.h"
 
 AddTrimLoop2SurfPointsPack::AddTrimLoop2SurfPointsPack ( SurfPointsPack &surfpointspack )
@@ -28,9 +28,9 @@ void AddTrimLoop2SurfPointsPack::AddTrimLoop ( const gmTrimLoop &trimloop )
 {
 	SetMerger merger;
 
-	merger.Merge ( trimloop.looppoints.parampoints , surfpack.parampoints );
+	/*merger.Merge ( trimloop.looppoints.parampoints , surfpack.parampoints );
 	merger.Merge ( trimloop.looppoints.modelpoints , surfpack.modelpoints );
-	merger.Merge ( trimloop.looppoints.normals , surfpack.normals );
+	merger.Merge ( trimloop.looppoints.normals , surfpack.normals );*/
 
 }
 

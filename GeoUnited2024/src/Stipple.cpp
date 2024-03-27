@@ -88,7 +88,7 @@ double Stipple::GetByteValue ( int tdegree )
 
 	double byteval = 0.0;
 
-	for ( i = 0; i < tdegree; i++ )
+	for (int i = 0; i < tdegree; i++ )
 		byteval = byteval + pow ( 2 , val[i] );
 
 	return byteval;

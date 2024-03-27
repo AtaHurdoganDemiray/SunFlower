@@ -2,6 +2,7 @@
 
 #ifndef __CurvePointGenerator_h__
 #define __CurvePointGenerator_h__
+
 #include "TransformationMatrix.h"
 #include "VPoint.h"
 #include <map>

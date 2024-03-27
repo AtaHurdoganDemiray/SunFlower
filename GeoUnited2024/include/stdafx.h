@@ -32,6 +32,11 @@
 #include "Bofstream.h"
 #include "TypeConverters.h"
 
+//V_NO_MFC
+#define V_NO_MFC
+#ifdef V_NO_MFC
+	#include "VMenu.h"
+#endif
 
 
 // viewpoint most used geometry types

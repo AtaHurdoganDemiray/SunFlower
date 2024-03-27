@@ -1,8 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <None Include="..\src\geometrycore.dsp" />
-    <None Include="..\src\SurfaceQuadTrimmer2.cpp___" />
     <None Include="..\..\include\AABB.inl">
       <Filter>include</Filter>
     </None>
@@ -21,12 +19,6 @@
     <None Include="..\..\include\sVector.inl">
       <Filter>include</Filter>
     </None>
-    <None Include="..\..\src\geometrycore.dsp">
-      <Filter>src</Filter>
-    </None>
-    <None Include="..\..\src\SurfaceQuadTrimmer2.cpp___">
-      <Filter>src</Filter>
-    </None>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="include">
@@ -38,12 +30,6 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\include\AABB.h">
-      <Filter>include</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\include\AddTrimLoop2SurfPointsPack_.h">
-      <Filter>include</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\include\AllTrimLoopUtilities_.h">
       <Filter>include</Filter>
     </ClInclude>
     <ClInclude Include="..\..\include\AnalyzeSurface.h">
@@ -748,9 +734,6 @@
     <ClInclude Include="..\..\include\OglWindowData.h">
       <Filter>include</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\include\OLCNetUserForASCIITextComServer.h">
-      <Filter>include</Filter>
-    </ClInclude>
     <ClInclude Include="..\..\include\OperationTransform.h">
       <Filter>include</Filter>
     </ClInclude>
@@ -1396,6 +1379,18 @@
     <ClInclude Include="..\..\include\VVoxelList.h">
       <Filter>include</Filter>
     </ClInclude>
+    <ClInclude Include="..\..\include\VDir.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\VTrnFile.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\VD.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\VTranslatedData.h">
+      <Filter>include</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <Text Include="..\..\include\ReadMe.txt">
@@ -1410,12 +1405,6 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\..\src\AABB.cpp">
-      <Filter>src</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\src\AddTrimLoop2SurfPointsPack_.cpp">
-      <Filter>src</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\src\AllTrimLoopUtilities_.cpp">
       <Filter>src</Filter>
     </ClCompile>
     <ClCompile Include="..\..\src\analyzesurface.cpp">
@@ -2027,9 +2016,6 @@
     <ClCompile Include="..\..\src\OglWindowData.cpp">
       <Filter>src</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\src\OLCNetUserForASCIITextComServer.cpp">
-      <Filter>src</Filter>
-    </ClCompile>
     <ClCompile Include="..\..\src\OperationTransform.cpp">
       <Filter>src</Filter>
     </ClCompile>
@@ -2631,6 +2617,18 @@
       <Filter>src</Filter>
     </ClCompile>
     <ClCompile Include="..\..\src\VVoxelList.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\VDir.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\VTrnFile.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\VD.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\VTranslatedData.cpp">
       <Filter>src</Filter>
     </ClCompile>
   </ItemGroup>

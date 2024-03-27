@@ -33,10 +33,10 @@ public:
 	enum IsInLoopAlgo {bsp,poscubes};
 	virtual ~SurfaceQuadTrimmer();
 	VRefTriangleMesh * TrimSurface();
-	//static bool RegularLineInt (const VLine2d &l1,const VLine2d &l2,VPoint2d &intp);
-	//bool IsPointInLoop ( const VPoint2d &p
-	//							, const SequentialLineSet2d *sl 
-	//							, PosCubes2d *cubes);
+	static bool RegularLineInt (const VLine2d &l1,const VLine2d &l2,VPoint2d &intp);
+	bool IsPointInLoop ( const VPoint2d &p
+								, const SequentialLineSet2d *sl 
+								, PosCubes2d *cubes);
 	struct rqp
 	{
 	public:

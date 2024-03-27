@@ -3,7 +3,7 @@
 #include "stdafx.h"
 #include "DraftEntity.h"
 #include "Model.h" 
-#include "VMenu.h"
+
 
 DraftEntity::DraftEntity (Model *model)
 //:ViewPointItem (type,name)
